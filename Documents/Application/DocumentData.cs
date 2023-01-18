@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
-using DocumentsDataInfo.Interface;
 using System.Reflection;
 
 namespace Documents.Application
 {
-    public class DocumentData : IDocumentData
+    public class DocumentData 
     {
         public void GetDocs()
         {
@@ -34,6 +33,14 @@ namespace Documents.Application
                     }
                 }
             }
+
+                foreach (Foods value in Enum.GetValues(typeof(Foods)))
+                {
+                    var memberInfo = typeof(Foods).GetMember(value.ToString());
+                    var attributes = memberInfo[0].GetCustomAttributes(typeof(EnumDescription), false);
+                    var description = ((EnumDescription)attributes[0]).Description;
+                    Console.WriteLine($"{value} : {description}");
+                }
         }
 
         public void GetDocss()

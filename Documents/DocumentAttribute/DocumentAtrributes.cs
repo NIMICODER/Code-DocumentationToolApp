@@ -16,4 +16,20 @@ namespace Documents.Application
         }
     }
 
+    [AttributeUsage(AttributeTargets.Field)]
+    public class EnumDescription : System.Attribute
+    {
+        private readonly string _description;
+
+        public EnumDescription(string description)
+        {
+            _description = description;
+        }
+
+        public string Description
+        {
+            get { return _description; }
+        }
+    }
+
 }

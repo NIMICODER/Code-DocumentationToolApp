@@ -1,5 +1,4 @@
-﻿using DocumentsDataInfo.Interface;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -64,11 +63,14 @@ namespace Documents.Application
 
     }
 
-    [Document("These are they Food i want to cook this Weekend")]
+   
     enum Foods
     {
+        [EnumDescription("Value 1 Description for FriedRice")]
         FriedRice,
+        [EnumDescription("Value 2 Description for JollofRice")]
         JollofRice,
+        [EnumDescription("Value 3 Description for EgusiSoup")]
         EgusiSoup
     }
 
