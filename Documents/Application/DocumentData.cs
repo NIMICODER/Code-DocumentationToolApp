@@ -22,8 +22,8 @@ namespace Documents.Application
                         var attributes = member.GetCustomAttributes(typeof(DocumentAttribute), false);
                         if (attributes.Length > 0)
                         {
-                            Console.WriteLine();
-                            Console.WriteLine($"Member Type: { member.MemberType}");
+                            Console.WriteLine($"Class:{type.Name}");
+                            Console.WriteLine($"Member: { member.MemberType}");
                             Console.WriteLine($"Name: {member.Name}");
                             Console.WriteLine($"Description: {((DocumentAttribute)attributes[0])._Description}");
                             Console.WriteLine($"Input: {((DocumentAttribute)attributes[0])._Input}");
