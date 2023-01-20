@@ -7,9 +7,9 @@ namespace CodeDocumentation.UI
     {
         static void Main(string[] args)
         {
-            //DocumentData data = new DocumentData();
+            
             DocumentData.GetDocs();
-            //data.GetDocss();
+            //DocumentData.GetDocss();
         }
     }
 }
