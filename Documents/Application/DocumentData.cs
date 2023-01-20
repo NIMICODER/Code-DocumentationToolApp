@@ -6,9 +6,9 @@ using System.Reflection;
 
 namespace Documents.Application
 {
-    public class DocumentData 
+    public static class DocumentData 
     {
-        public void GetDocs()
+        public static void GetDocs()
         {
             var assemblies = AppDomain.CurrentDomain.GetAssemblies();
             foreach (var assembly in assemblies)
@@ -44,7 +44,7 @@ namespace Documents.Application
                 }
         }
 
-        public void GetDocss()
+        public static void GetDocss()
         {
             var assembly = Assembly.GetExecutingAssembly();
             Console.WriteLine(assembly.FullName);

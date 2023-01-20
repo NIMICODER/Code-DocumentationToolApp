@@ -3,12 +3,12 @@
 
 namespace CodeDocumentation.UI
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            DocumentData data = new DocumentData();
-            data.GetDocs();
+            //DocumentData data = new DocumentData();
+            DocumentData.GetDocs();
             //data.GetDocss();
         }
     }
