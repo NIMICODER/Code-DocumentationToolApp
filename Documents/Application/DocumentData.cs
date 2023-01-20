@@ -68,7 +68,7 @@ namespace Documents.Application
                 var fields = type.GetFields();
                 foreach (var myFields in fields)
                 {
-                    Console.WriteLine("\t\t\tFields: " + myFields.Name);
+                    Console.WriteLine("\tFields: " + myFields.Name);
 
                 }
 

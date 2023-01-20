@@ -8,8 +8,8 @@ namespace CodeDocumentation.UI
         static void Main(string[] args)
         {
             DocumentData data = new DocumentData();
-            //data.GetDocs();
-            data.GetDocss();
+            data.GetDocs();
+            //data.GetDocss();
         }
     }
 }
