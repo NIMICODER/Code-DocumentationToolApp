@@ -23,11 +23,11 @@ namespace Documents.Application
                         if (attributes.Length > 0)
                         {
                             Console.WriteLine($"Class:{type.Name}");
-                            Console.WriteLine($"Member: { member.MemberType}");
-                            Console.WriteLine($"Name: {member.Name}");
-                            Console.WriteLine($"Description: {((DocumentAttribute)attributes[0])._Description}");
-                            Console.WriteLine($"Input: {((DocumentAttribute)attributes[0])._Input}");
-                            Console.WriteLine($"Output: {((DocumentAttribute)attributes[0])._Output}");
+                            Console.WriteLine($"\tMember: { member.MemberType}");
+                            Console.WriteLine($"\tName: {member.Name}");
+                            Console.WriteLine($"\tDescription: {((DocumentAttribute)attributes[0])._Description}");
+                            Console.WriteLine($"\tInput: {((DocumentAttribute)attributes[0])._Input}");
+                            Console.WriteLine($"\tOutput: {((DocumentAttribute)attributes[0])._Output}");
                             Console.WriteLine();
                         }
 
