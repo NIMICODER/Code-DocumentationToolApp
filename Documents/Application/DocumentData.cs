@@ -22,6 +22,7 @@ namespace Documents.Application
                         var attributes = member.GetCustomAttributes(typeof(DocumentAttribute), false);
                         if (attributes.Length > 0)
                         {
+                            Console.WriteLine();
                             Console.WriteLine($"Member Type: { member.MemberType}");
                             Console.WriteLine($"Name: {member.Name}");
                             Console.WriteLine($"Description: {((DocumentAttribute)attributes[0])._Description}");
@@ -50,7 +51,7 @@ namespace Documents.Application
             var types = assembly.GetTypes();
             foreach (var type in types)
             {
-                Console.WriteLine("Type: " + type.Name);
+                Console.WriteLine("Class: " + type.Name);
 
                 var props = type.GetProperties();
                 foreach (var property in props)
@@ -61,13 +62,13 @@ namespace Documents.Application
                 var meths = type.GetMethods();
                 foreach (var mymeths in meths)
                 {
-                    Console.WriteLine("\tMethods: " + mymeths.Name);
+                    Console.WriteLine("\t\tMethods: " + mymeths.Name);
                 }
 
                 var fields = type.GetFields();
                 foreach (var myFields in fields)
                 {
-                    Console.WriteLine("\tFields: " + myFields.Name);
+                    Console.WriteLine("\t\t\tFields: " + myFields.Name);
 
                 }
 
